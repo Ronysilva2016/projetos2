@@ -1,0 +1,59 @@
+{% extends 'SServices\base.html' %}
+{%block bibliotecas  %}
+ {% include 'SServices/home_js.html'%}
+
+{% endblock%}
+{% block content %}
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">TI - Forum  da Comarca de Cáceres</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="{% url 'home' %}">Home</a>
+    <a class="p-2 text-dark" href="{% url 'login' %}">Chamadas</a>
+    <a class="p-2 text-dark" href="#">Entrada</a>
+    <a class="p-2 text-dark" href="#">Suporte</a>
+  </nav>
+  <a class="btn btn-outline-primary" href="#">Sign up</a>
+</div>
+
+
+
+
+ <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Links</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">PJE </a></li>
+          <li><a class="text-muted" href="#">Malote Digital</a></li>
+          <li><a class="text-muted" href="#">SDM</a></li>
+          <li><a class="text-muted" href="#">SDK</a></li>
+          <li><a class="text-muted" href="#">Zimbra</a></li>
+
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Sistema </h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Home</a></li>
+          <li><a class="text-muted" href="#">Chamada</a></li>
+          <li><a class="text-muted" href="#">Entrada Pessoas</a></li>
+          <li><a class="text-muted" href="#">Suporte Técnico</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Ajuda</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Manuais</a></li>
+          <li><a class="text-muted" href="#">Wiki PJE</a></li>
+          <li><a class="text-muted" href="#">Soluções de TI</a></li>
+          <li><a class="text-muted" href="#">Contatos</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+{% endblock %}
